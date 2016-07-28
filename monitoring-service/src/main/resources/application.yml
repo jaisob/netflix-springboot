@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Monitoring-Service
+    
+server:
+  port: 9007
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Service2
+
+server:
+  port: 9003
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
